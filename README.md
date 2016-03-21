@@ -15,11 +15,13 @@ Allow the Add method to handle an unknown amount of numbers
 
 ## Step 3
 Allow the Add method to handle new lines between numbers (instead of commas).
+
 1. the following input is ok:  **“1\n2,3”**  and should return **6**
 2. the following input is NOT ok:  **“1,\ n”** (not need to prove it - just clarifying)
 
 ## Step 4
 Support different delimiters
+
 1. to change a delimiter, the beginning of the string will contain a separate line that looks like this: **“//[delimiter]\n[numbers…]”** for example **“//;\n1;2”** should return **3** where the default delimiter is **";"** .
 2. the first line is optional. All existing scenarios should still be supported
 
